@@ -59,6 +59,7 @@ check_cmd_puzzle_args([H | T]) ->
 
 available_puzzles() ->
   [ {"day1p1", day1p1}
+  , {"day1p2", day1p2}
   ].
 
 print_available_puzzles() ->
