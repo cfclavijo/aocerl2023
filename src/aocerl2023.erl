@@ -60,11 +60,13 @@ check_cmd_puzzle_args([H | T]) ->
 available_puzzles() ->
   [ {"day1p1", day1p1}
   , {"day1p2", day1p2}
+  , {"day2p1", day2p1}
+  , {"day2p2", day2p2}
   ].
 
 print_available_puzzles() ->
   Puzzles = [P || {P, _} <- available_puzzles()],
-  io:format("~s", [lists:join("\n", Puzzles)]).
+  io:format("~s~n", [lists:join("\n", Puzzles)]).
 
 print_help() ->
   HelpMsg =
